@@ -20,9 +20,10 @@ npm install --yes
 echo "Building application"
 npm run build
 
+# Copying dist to /var/www/finance
+echo "Copying dist to /var/www/finance"
+sudo cp -r dist /var/www/finance
 
-# Restarting server
-echo "Restarting server"
-pm2 restart finance
+
 
 echo "Deployment Finished!"
