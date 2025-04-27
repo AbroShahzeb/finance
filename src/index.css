@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Public Sans";
+  src: url(./assets/fonts/public-sans/PublicSans-VariableFont_wght.ttf);
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url(./assets/fonts/public-sans/PublicSans-Italic-VariableFont_wght.ttf);
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@theme {
+  --font-primary: "Public Sans", sans-serif;
+
+  /* Colors  */
+  --color-beige-100: #f8f4f0;
+  --color-beige-500: #98908b;
+
+  /* Greys */
+  --color-grey-100: #f2f2f2;
+  --color-grey-300: #b3b3b3;
+  --color-grey-500: #696868;
+  --color-grey-900: #201f24;
+
+  /* Secondary Colors  */
+  --color-green: #277c78;
+  --color-yellow: #f2cdac;
+  --color-cyan: #82c9d7;
+  --color-navy: #626070;
+  --color-red: #c94736;
+  --color-purple: #826cb0;
+
+  /* Other Colors */
+  --color-purple-light: #af81ba;
+  --color-turquoise: #597c7c;
+  --color-brown: #93674f;
+  --color-magenta: #934f6f;
+  --color-blue: #3f82b2;
+  --color-navy-grey: #97a0ac;
+  --color-army-green: #7f9161;
+  --color-gold: #cab361;
+  --color-orange: #be6c49;
+
+  /* Typography  */
+  --text-preset-1: 32px;
+  --text-preset-1--line-height: 120%;
+
+  --text-preset-2: 20px;
+  --text-preset-2--line-height: 120%;
+
+  --text-preset-3: 16px;
+  --text-preset-3--line-height: 150%;
+
+  --text-preset-4: 14px;
+  --text-preset-4--line-height: 150%;
+
+  --text-preset-5: 12px;
+  --text-preset-5--line-height: 150%;
+}
+
+body {
+  font-family: var(--font-primary);
+}
