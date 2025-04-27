@@ -29,7 +29,7 @@ export const Button = ({
     <button
       onClick={onClick}
       type={type}
-      className={`${variants[variant]} ${className} flex items-center gap-4 text-preset-4 font-bold transition-all`}
+      className={`${variants[variant]} ${className} flex items-center justify-center gap-4 text-preset-4 font-bold transition-all`}
     >
       {label}
       {variant === "tertiary" && tertiaryIcon}
