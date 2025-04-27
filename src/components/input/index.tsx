@@ -40,7 +40,7 @@ export const Input = ({
       {hint && (
         <div
           className={`text-preset-5
-             "text-grey-500"
+             text-grey-500
              text-right`}
         >
           {hint}

@@ -34,7 +34,7 @@ export const Dropdown = ({
         <div className="text-preset-5 font-bold text-grey-500">{label}</div>
       )}
 
-      <DropdownMenu className="w-full">
+      <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <div className="flex items-center  w-full gap-4 px-4 bg-white rounded-lg border border-beige-500 text-preset-4">
             {preIcon && preIcon}
@@ -69,7 +69,7 @@ export const Dropdown = ({
       {hint && (
         <div
           className={`text-preset-5
-             "text-grey-500"
+             text-grey-500
              text-right`}
         >
           {hint}
