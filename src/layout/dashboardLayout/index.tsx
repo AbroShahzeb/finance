@@ -7,7 +7,7 @@ export const DashboardLayout = () => {
       <div className="hidden lg:block">
         <Sidebar />
       </div>
-      <div>
+      <div className=" flex-1 h-screen overflow-y-auto max-lg:pb-[72px] max-sm:pb-[52px]">
         <Outlet />
       </div>
       <div className="lg:hidden">
