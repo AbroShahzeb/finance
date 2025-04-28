@@ -14,6 +14,8 @@ import { useState } from "react";
 
 import illustrationAuthentication from "@/assets/images/illustration-authentication.svg";
 
+import { AddEditBudget } from "@/dialogs/AddEditBudget";
+
 export const Login = () => {
   const {
     register,
@@ -95,6 +97,7 @@ export const Login = () => {
               }
             />
           </div>
+          <AddEditBudget />
           <Button label="Login" type="submit" />
           <div className="text-preset-4 text-secondary-text text-center w-full">
             Need an account?{" "}
