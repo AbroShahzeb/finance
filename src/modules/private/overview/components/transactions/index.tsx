@@ -10,7 +10,7 @@ import ROUTES from "@/constants/routes";
 import { FormattedNumber } from "react-intl";
 import { Link } from "react-router-dom";
 
-interface Transaction {
+export interface Transaction {
   id: number;
   name: string;
   avatar: string;
