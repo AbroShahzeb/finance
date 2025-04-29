@@ -42,7 +42,7 @@ const SUMMARY_ITEMS: SummaryItem[] = [
 
 export const SpendingSummary = () => {
   return (
-    <div className="p-8 rounded-lg bg-white flex flex-col gap-8 xl:min-w-[428px] max-lg:flex-row max-lg:flex-1 max-lg:w-full max-sm:flex-col">
+    <div className="p-8 rounded-lg bg-white lg:sticky lg:top-[20px] flex flex-col gap-8 xl:min-w-[428px] max-lg:flex-row max-lg:flex-1 max-lg:w-full max-sm:flex-col">
       <div className="flex items-center justify-center">
         <BudgetsChart />
       </div>
