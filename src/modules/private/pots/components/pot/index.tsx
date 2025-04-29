@@ -1,6 +1,7 @@
 import { IconEllipsis } from "@/assets/svgAssets";
 import { IPot } from "../..";
 import { FormattedNumber } from "react-intl";
+import { Button } from "@/components";
 
 export const Pot = ({ name, color, totalSaved, targetAmount }: IPot) => {
   console.log("COlor", color);
@@ -69,12 +70,8 @@ export const Pot = ({ name, color, totalSaved, targetAmount }: IPot) => {
 
       {/* Pot Actions  */}
       <div className="flex gap-4">
-        <button className="bg-beige-100 text-primary-text font-bold p-4 rounded-md flex-1 text-preset-4">
-          + Add Money
-        </button>
-        <button className="bg-beige-100 text-primary-text font-bold p-4 rounded-md flex-1 text-preset-4">
-          Withdraw
-        </button>
+        <Button label="+ Add Money" variant="secondary" className="flex-1" />
+        <Button label="Withdraw" variant="secondary" className="flex-1" />
       </div>
     </div>
   );
