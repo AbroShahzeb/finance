@@ -13,6 +13,7 @@ interface Props {
   postIcon?: React.ReactNode | null;
   hint?: string;
   error?: string;
+  options?: string[];
 }
 
 export const Dropdown = ({
@@ -23,6 +24,7 @@ export const Dropdown = ({
   postIcon,
   hint,
   error,
+  options = [],
 }: Props) => {
   const handleSelect = (value: string) => {
     setSelectedValue(value);
@@ -51,18 +53,14 @@ export const Dropdown = ({
           className="mt-1 divide-y rounded-lg flex flex-col bg-white shadow-[0px_4px_24px_0px_rgba(0,_0,_0,_0.25)]"
           style={{ width: "var(--radix-dropdown-menu-trigger-width)" }}
         >
-          <DropdownMenuItem
-            onClick={() => handleSelect("Settings")}
-            className="px-5 py-3 rounded-none text-preset-4 text-grey-900"
-          >
-            Settings
-          </DropdownMenuItem>
-          <DropdownMenuItem
-            onClick={() => handleSelect("Favorites")}
-            className="px-5 py-3 rounded-none text-preset-4 text-grey-900"
-          >
-            Favorites
-          </DropdownMenuItem>
+          {options.map((option: string) => (
+            <DropdownMenuItem
+              onClick={() => handleSelect(option)}
+              className="px-5 py-3 rounded-none text-preset-4 text-grey-900"
+            >
+              {option}
+            </DropdownMenuItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
 
